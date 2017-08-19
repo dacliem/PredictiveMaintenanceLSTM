@@ -1,0 +1,19 @@
+Datasets were be downloaded from Azure blob and stored in sub-folder "data":
+- Training data: It is the aircraft engine run-to-failure data.
+    http://azuremsamples.azureml.net/templatedata/PM_train.txt
+- Testing data: It is the aircraft engine operating data without failure events recorded.
+    http://azuremlsamples.azureml.net/templatedata/PM_test.txt
+- Ground truth data: It contains the information of true remaining cycles for each engine in the testing data.
+    http://azuremlsamples.azureml.net/templatedata/PM_truth.txt
+
+
+The data schema for the training and testing data is described as below:
+- id: Integer, aircraft engine identifier, range [1,100]
+- cycle: Integer, time, in cycles
+- setting1: Double, Operational setting 1
+- setting2: Double, Operational setting 2
+- setting3: Double, Operational setting 3
+- s1: Double, Sensor measurement 1
+- s2: Double, Sensor measurement 2 
+- ....
+- s21: Double, Sensor measurement 21
